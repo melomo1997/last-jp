@@ -95,7 +95,7 @@ a:hover {
     display: flex;
   }
   .landing__ttl {
-    margin-left: -330px;
+    margin-left: 200px;
   }
 }
 .main__ttl {
@@ -200,14 +200,14 @@ a:hover {
     letter-spacing: -0.8px;
     display: block;
     margin-top: 111px;
-    margin-left: 103px;
+    margin-left: 800px;
   }
   .pic__one {
     visibility: collapse;
   }
   .main__p {
     text-align: center;
-    margin-left: 92px;
+    margin-left: 800px;
     color: #FFF;
     text-align: center;
     font-family: Source Sans Pro;
@@ -220,7 +220,6 @@ a:hover {
   }
   .pic__two {
     visibility: visible;
-    margin-left: -50px;
   }
 }
 body {
