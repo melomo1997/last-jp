@@ -1,7 +1,8 @@
 .main{
-    text-align: center;
+   
 
 &__ttl{
+    margin-left: 589px;
     color: #FFF;
     font-family: Poppins;
     font-size: 84px;
@@ -20,8 +21,9 @@
     font-weight: 400;
     line-height: 34px; /* 154.545% */
     width: 573.5px;
-    // 
-    margin-left: 433px;
+   margin-left: 433px;
+  
+   
 
 }
 }
@@ -37,7 +39,13 @@
         }
 }
 
-@media only screen and (max-width:768px) and (min-width:375px){
+@media only screen and (max-width:768px) {
+    .main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
 
 .main__ttl{
     text-align: center;
@@ -48,10 +56,15 @@
     font-weight: 500;
     line-height: 82.8px; /* 115% */
     letter-spacing: -1.6px;
+    display: block;
+    text-align: center;
+    margin-left: 271px;
 }
 .main__p{
-    text-align: center;
-    margin-left: 97px;
+    // text-align: center;
+    // margin-left: 97px;
+    font-size: 22px;
+    display: flex;
 }
 
 .pic__one{
@@ -59,15 +72,27 @@
 }
 .pic__two{
     visibility: visible;
-    margin-top: -250px;
-    margin-left: 75px;
+    width: 617px;
+    height: 512;
+    display: block;
+    margin-top: -100px;
+    // i have made the first pic invisible so my pic automaticly goes down, icould fix it with margin negativ but it would be more that 100 ,so how can i make the first image be like gone instet of just make in invisible
+    margin-left: 276px;
   }
 }
 
-@media only screen and (max-width:375px){
+@media only screen and (max-width:320px){
+    .main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
     .main__ttl{
        text-align: center;
-        margin-left: 103px;
+        margin-left: 353px;
         color: #FFF;
         text-align: center;
         font-family: Poppins;
@@ -76,7 +101,35 @@
         font-weight: 500;
         line-height: 39.6px; /* 110% */
         letter-spacing: -0.8px;
+        display: block;
+        margin-top: 111px;
+        margin-left: 103px;
+       
+
     }
+    .pic__one{
+        visibility: collapse;
+      }
+
+      .main__p{
+        text-align: center;
+        margin-left: 92px;
+        color: #FFF;
+        text-align: center;
+        font-family: Source Sans Pro;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px; /* 150% */
+        width: 217px;
+        height: 49px;
+    }
+
+    .pic__two{
+        visibility: visible;
+        
+       margin-left: -50px;
+      }
 
 
 }
