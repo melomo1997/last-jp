@@ -166,7 +166,7 @@ a:hover {
   }
   .pic__two {
     visibility: visible;
-    width: 617px;
+    max-width: 617px;
     height: 512;
     display: block;
     margin-top: -100px;
