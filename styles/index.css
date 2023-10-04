@@ -1,15 +1,10 @@
-body{
-    max-width: 100%;
-    margin: auto;
-}
-
 .landing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
@@ -23,7 +18,6 @@ body{
   font-weight: 400;
   line-height: 36px; /* 150% */
   letter-spacing: -0.25px;
-  margin-left: 286px;
   margin-top: 62px;
 }
 .landing__ul {
@@ -38,7 +32,6 @@ body{
   font-weight: 400;
   line-height: 22.4px; /* 140% */
   margin-top: 67px;
-  margin-left: 338px;
 }
 .landing__i {
   visibility: collapse;
@@ -55,6 +48,9 @@ a {
 }
 a:hover {
   color: aqua;
+  -webkit-transition: 1s;
+  transition: 1s;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,8 +99,19 @@ a:hover {
     margin-left: 200px;
   }
 }
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .main__ttl {
-  margin-left: 589px;
   color: #FFF;
   font-family: Poppins;
   font-size: 84px;
@@ -121,16 +128,15 @@ a:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 34px; /* 154.545% */
-  width: 573.5px;
-  margin-left: 433px;
+  width: 100%;
 }
 
-.pic__one {
-  text-align: center;
-  margin-left: 288px;
-}
-.pic__two {
-  visibility: collapse;
+.pic {
+  width: 100%;
+  height: 328px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (max-width: 768px) {
@@ -158,24 +164,12 @@ a:hover {
     letter-spacing: -1.6px;
     display: block;
     text-align: center;
-    margin-left: 271px;
   }
   .main__p {
     font-size: 22px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .pic__one {
-    visibility: collapse;
-  }
-  .pic__two {
-    visibility: visible;
-    max-width: 617px;
-    height: 512;
-    display: block;
-    margin-top: -100px;
-    margin-left: 276px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -194,7 +188,6 @@ a:hover {
   }
   .main__ttl {
     text-align: center;
-    margin-left: 353px;
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -203,16 +196,12 @@ a:hover {
     font-weight: 500;
     line-height: 39.6px; /* 110% */
     letter-spacing: -0.8px;
-    display: block;
-    margin-top: 111px;
-    margin-left: 800px;
-  }
-  .pic__one {
-    visibility: collapse;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .main__p {
     text-align: center;
-    margin-left: 800px;
     color: #FFF;
     text-align: center;
     font-family: Source Sans Pro;
@@ -223,10 +212,18 @@ a:hover {
     width: 217px;
     height: 49px;
   }
-  .pic__two {
-    visibility: visible;
-  }
 }
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body {
   background-color: #000;
+  max-width: 1440px;
+  width: 100%;
 }

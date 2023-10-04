@@ -1,6 +1,6 @@
 .landing{
     display: flex;
-    justify-content: baseline;
+    justify-content: space-between;
    align-items: baseline;
 
 &__ttl{
@@ -12,17 +12,9 @@
     font-weight: 400;
     line-height: 36px; /* 150% */
     letter-spacing: -0.25px;
-    // 
-    margin-left: 286px;
+    // margin-left: 286px;
     margin-top: 62px;
 } 
-
-
-
-&__li{
-    // margin-left: 20px;  
-}
-
 &__ul{
     display: flex;
     // justify-content: space-between;
@@ -35,7 +27,7 @@
     font-weight: 400;
     line-height: 22.4px; /* 140% */
     margin-top: 67px;
-    margin-left: 338px;
+    // margin-left: 338px;
     
     
 }
@@ -55,6 +47,8 @@ a{
     color: #FFF;
     &:hover{
         color: aqua;
+        transition: 1s;
+        font-size: 20px;
     }
 }
 

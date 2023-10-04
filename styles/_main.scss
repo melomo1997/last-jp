@@ -1,8 +1,10 @@
 .main{
-   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 
 &__ttl{
-    margin-left: 589px;
+    // margin-left: 589px;
     color: #FFF;
     font-family: Poppins;
     font-size: 84px;
@@ -20,23 +22,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 34px; /* 154.545% */
-    width: 573.5px;
-   margin-left: 433px;
-  
-   
-
+    width: 100%;
 }
 }
-
 .pic{
-    &__one{
-    text-align: center;
-    margin-left: 288px;
-    }
-
-    &__two{
-        visibility: collapse;
-        }
+    width: 100%;
+    height: 328px;
+    display: flex;
 }
 
 @media only screen and (max-width:768px) {
@@ -58,27 +50,15 @@
     letter-spacing: -1.6px;
     display: block;
     text-align: center;
-    margin-left: 271px;
+    // margin-left: 271px;
 }
 .main__p{
     // text-align: center;
     // margin-left: 97px;
     font-size: 22px;
     display: flex;
-}
+    }
 
-.pic__one{
-  visibility: collapse;
-}
-.pic__two{
-    visibility: visible;
-    max-width: 617px;
-    height: 512;
-    display: block;
-    margin-top: -100px;
-    // i have made the first pic invisible so my pic automaticly goes down, icould fix it with margin negativ but it would be more that 100 ,so how can i make the first image be like gone instet of just make in invisible
-    margin-left: 276px;
-  }
 }
 
 @media only screen and (max-width:320px){
@@ -92,7 +72,7 @@
 
     .main__ttl{
        text-align: center;
-        margin-left: 353px;
+        // margin-left: 353px;
         color: #FFF;
         text-align: center;
         font-family: Poppins;
@@ -101,19 +81,13 @@
         font-weight: 500;
         line-height: 39.6px; /* 110% */
         letter-spacing: -0.8px;
-        display: block;
-        margin-top: 111px;
-        margin-left: 800px;
-       
+        display: flex;    
 
     }
-    .pic__one{
-        visibility: collapse;
-      }
+
 
       .main__p{
         text-align: center;
-        margin-left: 800px;
         color: #FFF;
         text-align: center;
         font-family: Source Sans Pro;
@@ -125,12 +99,9 @@
         height: 49px;
     }
 
-    .pic__two{
-        visibility: visible;
-        
-      
-      }
-
-
+}
+img{
+    display: flex;
+    align-items: center;
 }
 
